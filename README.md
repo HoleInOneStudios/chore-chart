@@ -1,2 +1,3 @@
-# Repo-Template
-This a template for new repos.
+# Chore-Chart
+
+A chore chart tracker that runs on a local network.

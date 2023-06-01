@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+require("dotenv").config();
+var app = require("../app");
+var { createServer } = require("http");
+
+var port = process.env.PORT || "8080";
+app.set("port", port);
+
+var host = process.env.HOST || "localhost";
+
+var server = createServer(app);
+
+server.listen(port, host, () => {
+  console.log(`Server running at http://${host}:${port}/`);
+});
